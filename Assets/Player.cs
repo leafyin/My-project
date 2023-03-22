@@ -6,11 +6,24 @@ public class Player : MonoBehaviour
 {
 
     public GameObject sphere;
+    private Light myLight;
 
     // Start is called before the first frame update
     void Start()
     {
+        // 获取Light
+        myLight = GetComponent<Light>();
         print("游戏开始");
+    }
+
+    private void FixedUpdate()
+    {
+
+    }
+
+    private void LateUpdate()
+    {
+
     }
 
     // Update is called once per frame
@@ -18,6 +31,31 @@ public class Player : MonoBehaviour
     {
         Move();
         IsReach();
+        ChangeColor();
+        LightToggle();
+    }
+
+    private void LightToggle()
+    {
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            myLight.enabled = !myLight.enabled;
+        }
+    }
+
+    void ChangeColor() {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            GetComponent<Renderer>().material.color = Color.red;
+        }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            GetComponent<Renderer>().material.color = Color.blue;
+        }
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            GetComponent<Renderer>().material.color = Color.yellow;
+        }
     }
 
     public void Move()
