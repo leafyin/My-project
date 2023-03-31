@@ -6,3 +6,4 @@ Logs
 *.meta
 Library/ShaderCache/*
 LIbrary/Artifacts/*
+Temp/*
