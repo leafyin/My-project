@@ -334,6 +334,7 @@
 "Assets/Script/Axis.cs"
 "Assets/Script/ButtonAndKey.cs"
 "Assets/Script/CameraLookAt.cs"
+"Assets/Script/MouseEvent.cs"
 "Assets/Script/Player.cs"
 -langversion:9.0
 

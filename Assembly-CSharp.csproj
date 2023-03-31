@@ -57,9 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Script/Player.cs" />
-    <Compile Include="Assets/Script/CameraLookAt.cs" />
     <Compile Include="Assets/Script/Axis.cs" />
     <Compile Include="Assets/Script/ButtonAndKey.cs" />
+    <Compile Include="Assets/Script/CameraLookAt.cs" />
+    <Compile Include="Assets/Script/MouseEvent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
